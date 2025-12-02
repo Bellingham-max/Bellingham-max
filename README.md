@@ -1,1 +1,1 @@
-![Ironclad Theme](header.svg)
+![Steam Engine](steam_engine.svg)
