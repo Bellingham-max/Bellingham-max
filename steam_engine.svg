@@ -2,7 +2,7 @@
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        /* --- 全局容器：深渊铸造厂 --- */
+        /* --- 全局容器：深渊动力室 --- */
         .engine-room {
           width: 100%; height: 100%;
           background: #0b0b0b;
@@ -29,32 +29,35 @@
           50% { opacity: 0.6; }
           100% { opacity: 0; transform: scale(2) translateY(-100px); }
         }
-        @keyframes glow-pulse {
-          0% { box-shadow: 0 0 5px #ff4500; }
-          100% { box-shadow: 0 0 20px #ff4500, 0 0 10px #ff8c00 inset; }
+        @keyframes jitter {
+          0% { transform: rotate(0deg); }
+          25% { transform: rotate(5deg); }
+          50% { transform: rotate(-3deg); }
+          75% { transform: rotate(2deg); }
+          100% { transform: rotate(0deg); }
         }
 
-        /* --- 巨大的背景齿轮 (纯CSS绘制太卡，这里用SVG Path) --- */
+        /* --- 背景巨型齿轮 (SVG Path) --- */
         .bg-gear {
           position: absolute;
           fill: #1a1512;
           z-index: 0;
         }
         .gear-xl {
-          width: 400px; height: 400px;
-          right: -100px; top: -100px;
+          width: 450px; height: 450px;
+          right: -120px; top: -120px;
           animation: spin 30s linear infinite;
         }
         .gear-l {
-          width: 300px; height: 300px;
-          left: -80px; bottom: -80px;
-          animation: spin-rev 20s linear infinite;
+          width: 350px; height: 350px;
+          left: -100px; bottom: -100px;
+          animation: spin-rev 25s linear infinite;
         }
 
-        /* --- 蒸汽活塞组件 (左侧) --- */
+        /* --- 蒸汽活塞组件 (左侧核心) --- */
         .piston-assembly {
           position: absolute;
-          left: 50px; bottom: 50px;
+          left: 60px; bottom: 60px;
           width: 100px; height: 250px;
           z-index: 2;
         }
@@ -66,120 +69,88 @@
           border-radius: 4px;
           position: relative;
           margin: 0 auto;
-          box-shadow: inset 0 0 10px #000;
+          box-shadow: inset 0 0 15px #000;
         }
 
         .piston-rod {
-          width: 60px; height: 80px;
-          background: linear-gradient(90deg, #cd7f32, #ffd700, #cd7f32); /* 黄铜色 */
+          width: 60px; height: 100px;
+          background: linear-gradient(90deg, #cd7f32, #ffd700, #cd7f32); /* 黄铜色连杆 */
           position: absolute;
-          top: 10px; left: 10px;
-          border-bottom: 4px solid #8b4513;
+          top: 0; left: 10px;
+          border-bottom: 5px solid #8b4513;
           animation: piston-move 2s ease-in-out infinite;
         }
         
-        /* 连杆连接处 */
+        /* 连杆铆钉 */
         .piston-rod::after {
-          content: '';
-          position: absolute;
-          bottom: 10px; left: 15px;
-          width: 30px; height: 30px;
-          background: #111;
-          border-radius: 50%;
-          border: 2px solid #555;
+          content: ''; position: absolute; bottom: 10px; left: 15px;
+          width: 30px; height: 30px; background: #111;
+          border-radius: 50%; border: 2px solid #555;
         }
 
-        /* --- 蒸汽喷射口 --- */
-        .steam-vent {
-          position: absolute;
-          bottom: 150px; left: 10px;
-        }
+        /* --- 蒸汽喷射效果 --- */
+        .steam-vent { position: absolute; bottom: 140px; left: 0px; width: 100%; }
         .steam-cloud {
-          position: absolute;
+          position: absolute; left: 20px;
           width: 40px; height: 40px;
-          background: radial-gradient(circle, rgba(255,255,255,0.8), transparent);
+          background: radial-gradient(circle, rgba(200,200,200,0.5), transparent);
           border-radius: 50%;
           filter: blur(8px);
           animation: steam-vent 2s infinite;
         }
-        .s1 { animation-delay: 0s; }
-        .s2 { animation-delay: 0.5s; }
-        .s3 { animation-delay: 1.0s; }
+        .s1 { animation-delay: 0s; left: 10px; }
+        .s2 { animation-delay: 0.7s; left: 30px; transform: scale(1.2); }
+        .s3 { animation-delay: 1.4s; left: 20px; }
 
         /* --- 中央控制面板 --- */
         .main-panel {
           position: absolute;
           top: 50%; left: 50%;
-          transform: translate(-40%, -50%); /* 稍微偏右，避开活塞 */
-          width: 450px;
-          background: rgba(20, 18, 16, 0.9);
+          transform: translate(-35%, -50%);
+          width: 420px;
+          background: rgba(20, 18, 16, 0.95);
           border: 4px double #8b5a2b;
-          padding: 30px;
+          padding: 25px;
           z-index: 5;
-          backdrop-filter: blur(2px);
           text-align: center;
+          box-shadow: 0 0 30px rgba(0,0,0,0.8);
         }
 
         .panel-title {
-          font-size: 2em;
+          font-size: 1.8em;
           color: #ffaa00;
           text-shadow: 0 0 10px rgba(255, 69, 0, 0.6);
           text-transform: uppercase;
           border-bottom: 2px solid #5a4632;
-          padding-bottom: 10px;
-          margin-bottom: 15px;
+          padding-bottom: 10px; margin: 0 0 15px 0;
           letter-spacing: 2px;
         }
 
-        /* 压力表模拟 */
-        .gauge-row {
-          display: flex;
-          justify-content: center;
-          gap: 20px;
-          margin: 20px 0;
-        }
+        /* 压力表组 */
+        .gauge-row { display: flex; justify-content: center; gap: 15px; margin: 20px 0; }
         .gauge {
-          width: 60px; height: 60px;
+          width: 70px; height: 70px;
           border-radius: 50%;
-          border: 3px solid #555;
-          background: #000;
+          border: 4px solid #444;
+          background: radial-gradient(circle, #222, #000);
           position: relative;
-          box-shadow: 0 0 5px #000;
         }
-        .gauge::before {
+        .gauge::after { /* 指针 */
           content: ''; position: absolute; top: 50%; left: 50%;
-          width: 25px; height: 2px; background: #ff4500;
+          width: 30px; height: 2px; background: #ff3300;
           transform-origin: 0% 50%;
-          animation: spin 0.2s steps(50) infinite alternate; /* 疯转的指针 */
+          animation: jitter 0.2s linear infinite; /* 指针疯狂抖动 */
         }
 
-        .status-text {
-          font-size: 0.9em;
-          line-height: 1.6;
-          color: #c0c0c0;
-        }
+        .status-text { font-size: 0.85em; line-height: 1.6; color: #a0a0a0; text-align: left; background: #000; padding: 10px; border: 1px solid #333; }
+        .highlight-red { color: #ff4500; font-weight: bold; animation: blink 1s infinite; }
 
-        .highlight-red { color: #ff4500; font-weight: bold; }
+        @keyframes blink { 50% { opacity: 0.5; } }
 
-        /* 管道 */
-        .pipe {
-          position: absolute;
-          background: linear-gradient(180deg, #555, #222);
-          border: 1px solid #111;
-          z-index: 1;
-        }
-        .pipe-h { height: 15px; width: 100%; top: 40px; left: 0; }
-        .pipe-v { width: 20px; height: 100%; right: 50px; top: 0; }
-
-        /* 警示灯 */
-        .lamp {
-          position: absolute; top: 10px; right: 10px;
-          width: 15px; height: 15px;
-          background: #500;
-          border-radius: 50%;
-          border: 2px solid #333;
-          animation: glow-pulse 1s infinite alternate;
-        }
+        /* 管道装饰 */
+        .pipe { position: absolute; background: linear-gradient(180deg, #444, #111); border: 1px solid #000; z-index: 1; }
+        .pipe-h { height: 12px; width: 100%; top: 50px; left: 0; }
+        .pipe-v { width: 15px; height: 100%; right: 60px; top: 0; }
 
       </style>
 
@@ -208,22 +179,16 @@
         </div>
 
         <div class="main-panel">
-          <div class="lamp"></div> <h1 class="panel-title">STEAM ENGINE CORE</h1>
-          
+          <h1 class="panel-title">ENGINE CORE // Mk-II</h1>
           <div class="gauge-row">
-            <div class="gauge"></div>
-            <div class="gauge"></div>
-            <div class="gauge"></div>
+            <div class="gauge" style="transform: rotate(45deg)"></div>
+            <div class="gauge" style="transform: rotate(90deg)"></div>
+            <div class="gauge" style="transform: rotate(135deg)"></div>
           </div>
-          
           <div class="status-text">
-            <p>PRESSURE: <span class="highlight-red">1450 PSI (CRITICAL)</span></p>
-            <p>VALVE STATUS: OPEN</p>
-            <p>OUTPUT: 98% MAX</p>
-          </div>
-          
-          <div style="margin-top:20px; height:10px; background:#333; border:1px solid #555;">
-             <div style="width:90%; height:100%; background:repeating-linear-gradient(45deg, #b8860b, #b8860b 10px, #daa520 10px, #daa520 20px);"></div>
+            > PRESSURE VALVE: <span class="highlight-red">OPEN</span><br/>
+            > STEAM OUTPUT: 98.4%<br/>
+            > CORE TEMP: STABLE
           </div>
         </div>
 
