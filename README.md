@@ -1,54 +1,46 @@
 <div align="center">
-
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=00F2FF&center=true&vCenter=true&width=600&lines=Hi,+I'm+Bellingham-max;Welcome+to+My+Cyber+Space;Crafting+Code+in+the+Digital+Void" alt="Typing SVG" />
-</a>
-
-<br/>
-
-<p align="center">
-  <a href="https://github.com/Bellingham-max">
-    <img src="https://skillicons.dev/icons?i=github&theme=dark" height="40"/>
-  </a>
-  <a href="https://www.linkedin.com/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin&theme=dark" height="40"/>
-  </a>
-  <a href="https://twitter.com/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=twitter&theme=dark" height="40"/>
-  </a>
-</p>
-
----
-
-### ⚡ Technical Arsenal
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,python,js,ts,react,nextjs,nodejs,docker,aws&theme=dark" />
-</p>
-
----
-
-### 🐍 My Contribution Snake
-
-<p align="center">
-  <img src="https://github.com/Bellingham-max/Bellingham-max/blob/output/github-contribution-grid-snake-dark.svg" alt="snake contribution" width="100%"/>
-</p>
-
----
-
-### 📊 GitHub Analytics
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=800&size=45&pause=1000&color=FFFFFF&center=true&vCenter=true&width=800&height=100&lines=BELLINGHAM-MAX_;&lt;SYSTEM_ONLINE/&gt;" alt="Typing SVG" />
+</div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Bellingham-max&show_icons=true&theme=tokyonight&hide_border=true" height="180" alt="stats graph" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bellingham-max&theme=tokyonight&hide_border=true" height="180" alt="streak graph" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bellingham-max&layout=compact&theme=tokyonight&hide_border=true" height="180" alt="languages graph" />
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 </div>
 
 <br/>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Bellingham-max&style=flat-square&color=blueviolet" alt="Profile Views" />
-</p>
+<table align="center" width="100%" style="border:0; background:none;">
+  <tr>
+    <td width="60%" align="center" style="border:0;">
+      <h3 align="left">📡 Activity_Stream</h3>
+      <br/>
+      <a href="https://github.com/Bellingham-max">
+        <img src="https://github-isometric-contribution-graph.vercel.app/api?username=Bellingham-max&theme=nord&color=88C0D0" width="100%" alt="Isometric Graph" />
+      </a>
+    </td>
+    
+    <td width="40%" align="center" style="vertical-align:top; border:0;">
+      <h3 align="left">⚙️ System_Status</h3>
+      <br/>
+      <img src="https://github-readme-stats.vercel.app/api?username=Bellingham-max&show_icons=true&theme=transparent&hide_border=true&title_color=88C0D0&text_color=D8DEE9&icon_color=81A1C1&count_private=true" width="100%" />
+      <br/><br/>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bellingham-max&layout=compact&theme=transparent&hide_border=true&title_color=88C0D0&text_color=D8DEE9" width="100%" />
+    </td>
+  </tr>
+</table>
 
+<br/>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+  <br/><br/>
+  <h3 align="center">🐍 Contribution_Sequence</h3>
+  <img src="https://github.com/Bellingham-max/Bellingham-max/blob/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</div>
+
+<div align="center">
+  <br/>
+  <samp>
+    DESIGNED_FOR: [ BELLINGHAM-MAX ] // SYSTEM_VER: 2025.1
+    <br/>
+    <img src="https://komarev.com/ghpvc/?username=Bellingham-max&style=flat-square&color=2e3440&label=VISITS" />
+  </samp>
 </div>
