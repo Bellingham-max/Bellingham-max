@@ -1,49 +1,48 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+  <img src="https://i.pinimg.com/originals/2b/24/f1/2b24f195d438c82b7992985f94982709.gif" width="100%" style="border-radius: 10px; box-shadow: 0px 0px 20px #ff00ff;">
 </div>
+
+<br/>
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=VT323&size=35&duration=3000&pause=1000&color=00FF00&background=00000000&center=true&vCenter=true&width=500&lines=INITIALIZING+SYSTEM...;ACCESSING+PROFILE_DATA;WELCOME+NETRUNNER.;>+HACKER+|+DEVELOPER" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=30&duration=2000&pause=1000&color=00FF00&background=00000000&center=true&vCenter=true&width=500&lines=SYSTEM_OVERRIDE...;>+USER:+Bellingham-max;>+STATUS:+ONLINE;>+MODE:+CYBERPUNK" alt="Typing SVG" />
   </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Bellingham-max&show_icons=true&theme=synthwave&hide_border=true&bg_color=0d1117" height="180px"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bellingham-max&layout=compact&theme=synthwave&hide_border=true&bg_color=0d1117" height="180px"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Bellingham-max&show_icons=true&theme=radical&hide_border=true&bg_color=141321" height="170px"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bellingham-max&layout=compact&theme=radical&hide_border=true&bg_color=141321" height="170px"/>
 </div>
 
 <br/>
 
 <div align="center">
-    <img src="https://github.com/ABSphreak/ABSphreak/raw/master/readme-assets/glitch-seperator.gif" width="80%">
-</div>
-
-### >_ TECH_STACK_MODULE // 已加载技术模块
-
-<div align="center">
-  <img src="https://img.shields.io/badge/python-000000?style=for-the-badge&logo=python&logoColor=00FF00" />
-  <img src="https://img.shields.io/badge/javascript-000000?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-  <img src="https://img.shields.io/badge/react-000000?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/cyber_security-000000?style=for-the-badge&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/linux_terminal-000000?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Q1ODQ4ZGNhNDQ5N2E5NDQ4ZGNhNDQ5N2E5NDQ4ZGNhNDQ5N2E5NDQ4ZGNhNDQ5N2E5/LmXTW9Y2tYQG8/giphy.gif" width="100%" height="20">
 </div>
 
 <br/>
 
-<div align="center">
-    <img src="https://github.com/ABSphreak/ABSphreak/raw/master/readme-assets/glitch-seperator.gif" width="80%">
-</div>
-
-### >_ CONTRIBUTION_MATRIX // 贡献矩阵数据流
+### >_ NEURAL_LINK_ESTABLISHED // 技能模组
 
 <div align="center">
-  <img src="https://github.com/Bellingham-max/Bellingham-max/raw/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://img.shields.io/badge/PYTHON-000000?style=for-the-badge&logo=python&logoColor=00f2ea" />
+  <img src="https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=ff00ff" />
+  <img src="https://img.shields.io/badge/REACT-000000?style=for-the-badge&logo=react&logoColor=00f2ea" />
+  <img src="https://img.shields.io/badge/KALI_LINUX-000000?style=for-the-badge&logo=kalilinux&logoColor=ff00ff" />
+  <img src="https://img.shields.io/badge/BASH-000000?style=for-the-badge&logo=gnu-bash&logoColor=00f2ea" />
 </div>
 
-<div align="left" style="font-family: monospace; color: #00ff00">
-<p>>_ END_OF_TRANSMISSION</p>
-<p>>_ DISCONNECTING...</p>
+<br/>
+
+### >_ DATA_STREAM // 贡献矩阵
+
+<div align="center">
+  <img src="https://github.com/Bellingham-max/Bellingham-max/raw/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,25,30&height=100&section=footer" width="100%">
 </div>
