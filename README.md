@@ -38,3 +38,11 @@ I'm a developer interested in **Web Development** and **Security**.
 <div align="center">
   <img src="http://ghchart.rshah.org/你的GitHub用户名" alt="Coding Activity Graph" />
 </div>
+
+<div align="center">
+  <img src="https://github.com/你的用户名/你的用户名/raw/output/github-contribution-grid-snake.svg" />
+</div>
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=你的GitHub用户名&theme=flat&no-frame=true&column=7&margin-w=15" />
+</div>
+
