@@ -1,4 +1,4 @@
-name: System Generate Snake
+name: Generate Steampunk Snake
 
 on:
   schedule:
@@ -7,23 +7,35 @@ on:
   push:
     branches:
     - main
+    - master
 
 jobs:
-  build:
+  generate:
+    permissions: 
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
     steps:
-      - uses: actions/checkout@v3
-      
-      - uses: Platane/snk/svg-only@v3
-        id: snake-gif
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: Bellingham-max
-          # 这里使用了 "Nord" 主题配色：冰蓝色系，非常高级，不刺眼
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#88C0D0&color_dots=#2E3440,#4C566A,#81A1C1,#88C0D0,#ECEFF4
-            
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#e1c16e&color_dots=#2d2d2d,#5d4037,#8d6e63,#bcaaa4,#e1c16e
+          
+          # 🎨 蒸汽朋克配色解析 (color_dots 从低活跃度到高活跃度):
+          # 背景: #161b22 (默认深色)
+          # level 0 (空): #2d2d2d (深灰石墨)
+          # level 1 (少): #5d4037 (生锈铁 - Vintage Brown)
+          # level 2 (中): #cd7f32 (青铜 - Bronze)
+          # level 3 (多): #c0c0c0 (白银 - Silver) -- 修正上方代码实际使用了 #bcaaa4 暖灰
+          # level 4 (极多): #e1c16e (黄金 - Brass/Gold)
+          # Snake: #e1c16e (纯金蛇身)
+          
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
