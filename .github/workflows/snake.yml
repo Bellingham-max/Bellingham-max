@@ -1,14 +1,9 @@
-name: Generate Cyber Snake
+name: Generate Neon Snake
 
 on:
-  # 每天 UTC 0点自动运行
   schedule:
-    - cron: "0 0 * * *" 
-  
-  # 允许在 Actions 页面手动点击运行
-  workflow_dispatch:
-
-  # 推送到 main 分支时自动运行
+    - cron: "0 0 * * *"  # 每天午夜运行
+  workflow_dispatch:     # 允许手动触发
   push:
     branches:
     - main
@@ -24,16 +19,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Generate Snake SVG
+      - name: Generate Snake
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: Bellingham-max
+          # 这里使用了自定义的调色板：
+          # 背景色(透明), 浅色(紫色), 中色(粉色), 深色(金色), 极深色(亮白)
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#ff00aa&color_dots=#161b22,#4a1c40,#a83279,#d96c9c,#ffffff
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#7b00ff&color_dots=#0d1117,#39006b,#7b00ff,#bc00ff,#ffffff
+
       - name: Push to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
