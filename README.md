@@ -11,7 +11,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Bellingham-max&show_icons=true&theme=synthwave&hide_border=true&count_private=true&bg_color=0d1117" height="180px"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Bellingham-max&show_icons=true&theme=synthwave&hide_border=true&bg_color=0d1117" height="180px"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bellingham-max&layout=compact&theme=synthwave&hide_border=true&bg_color=0d1117" height="180px"/>
 </div>
 
