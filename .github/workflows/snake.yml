@@ -1,29 +1,35 @@
-name: System Generate Snake
+name: System Console Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *" 
-  workflow_dispatch:
+    - cron: "0 0 * * *"  # 每天午夜运行
+  workflow_dispatch:     # 允许手动触发
   push:
     branches:
     - main
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
     steps:
-      - uses: actions/checkout@v3
-      
-      - uses: Platane/snk/svg-only@v3
-        id: snake-gif
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Snake
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Bellingham-max
-          # 这里使用了 "Nord" 主题配色：冰蓝色系，非常高级，不刺眼
+          # 核心配置：使用图中的青色/紫色赛博朋克配色
+          # color_snake: 青色 (#00f2ff)
+          # dots: 从深蓝背景到亮青色的渐变
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#88C0D0&color_dots=#2E3440,#4C566A,#81A1C1,#88C0D0,#ECEFF4
-            
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00f2ff&color_dots=#0d1117,#1f2937,#3b82f6,#00f2ff,#ffffff
+
+      - name: Push to Output Branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
