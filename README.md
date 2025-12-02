@@ -1,70 +1,60 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=35&pause=1000&color=00F2FF&center=true&vCenter=true&width=800&lines=Bellingham-max+|+Architecting+the+Digital+Future;System+Console+Initialized...;Accessing+Neural+Network..." alt="Typing SVG" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&text=Hello%20World&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Welcome%20to%20my%20Cyberverse&descAlignY=51&descAlign=62" width="100%"/>
 </div>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="80%">
-</div>
-
-<br/>
-
-<div align="center">
-  <a href="https://github.com/Bellingham-max">
-    <img src="https://img.shields.io/badge/GitHub-CLI-%230d1117?style=for-the-badge&logo=github&logoColor=00f2ff&border=00f2ff" />
-  </a>
-  &nbsp;
-  <a href="https://linkedin.com">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-%230d1117?style=for-the-badge&logo=linkedin&logoColor=00f2ff" />
-  </a>
-  &nbsp;
-  <a href="https://twitter.com">
-    <img src="https://img.shields.io/badge/Twitter-Follow-%230d1117?style=for-the-badge&logo=twitter&logoColor=00f2ff" />
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=F75C7E&center=true&vCenter=true&width=435&lines=Creative+Developer;Open+Source+Enthusiast;Pixel+Art+Lover;Building+the+Future" alt="Typing SVG" />
   </a>
 </div>
 
 <br/>
 
-<table align="center" width="95%" style="border: 0px solid #00f2ff; background-color: #0d1117;">
+<table align="center" border="0">
   <tr>
-    <td width="60%" valign="top" style="border: 1px solid #30363d;">
-      <h3 align="left" style="color: #00f2ff;">📡 ACTIVITY_STREAM</h3>
+    <td width="50%" align="center" valign="top">
+      <h3>🚀 3D Activity Graph</h3>
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=你的GitHub用户名&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" width="100%" />
+      
+      <br/><br/>
+      
+      <h3>🛠️ Tech Arsenal</h3>
       <div align="center">
-        <a href="https://github.com/Bellingham-max">
-          <img src="https://github-isometric-contribution-graph.vercel.app/api?username=Bellingham-max&theme=tokyonight&color=00f2ff" width="100%" />
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=js,ts,react,vue,python,rust,go,docker,kubernetes,aws,linux,git&perline=6&theme=dark" />
         </a>
       </div>
     </td>
-
-    <td width="40%" valign="top" style="border: 1px solid #30363d;">
-      <h3 align="left" style="color: #00f2ff;">⚙️ SYSTEM_STATUS</h3>
-      <div align="center">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bellingham-max&theme=tokyonight&hide_border=true&background=00000000&ring=00f2ff&fire=00f2ff&currStreakLabel=00f2ff" width="100%" />
-      </div>
-      
+    
+    <td width="50%" align="center" valign="top">
+      <h3>📊 Holographic Stats</h3>
+      <img src="https://github-readme-stats.vercel.app/api?username=你的GitHub用户名&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=FE428E&icon_color=F8D866" />
       <br/>
-      
-      <h3 align="left" style="color: #00f2ff;">⚡ TECHNICAL ARSENAL</h3>
-      <div align="center">
-        <img src="https://img.shields.io/badge/C++-Core-%230d1117?style=for-the-badge&logo=c%2B%2B&logoColor=white&color=161b22" />
-        <img src="https://img.shields.io/badge/Python-Script-%230d1117?style=for-the-badge&logo=python&logoColor=00f2ff&color=161b22" />
-        <br/>
-        <img src="https://img.shields.io/badge/JS-Logic-%230d1117?style=for-the-badge&logo=javascript&logoColor=00f2ff&color=161b22" />
-        <img src="https://img.shields.io/badge/TS-Strict-%230d1117?style=for-the-badge&logo=typescript&logoColor=00f2ff&color=161b22" />
-        <br/>
-        <img src="https://img.shields.io/badge/React-UI-%230d1117?style=for-the-badge&logo=react&logoColor=00f2ff&color=161b22" />
-        <img src="https://img.shields.io/badge/Docker-Container-%230d1117?style=for-the-badge&logo=docker&logoColor=00f2ff&color=161b22" />
-      </div>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=你的GitHub用户名&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=FE428E" />
     </td>
   </tr>
 </table>
 
-<table align="center" width="95%" style="border: 0px; margin-top: 10px;">
-  <tr>
-    <td style="border: 1px solid #30363d;">
-      <h3 align="left" style="color: #00f2ff;">🐍 CONTRIBUTION_SEQUENCE</h3>
-      <div align="center">
-        <img src="https://github.com/Bellingham-max/Bellingham-max/blob/output/github-contribution-grid-snake-dark.svg" width="100%" />
-      </div>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
+
+<h2 align="center">🐍 The Neon Snake</h2>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="github-contribution-grid-snake.svg">
+  </picture>
+</p>
+
+<div align="center">
+  <a href="https://github.com/你的GitHub用户名">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&text=Follow%20Me&height=50&fontSize=20&descAlignY=51&descAlign=62"/>
+  </a>
+</div>
+
+<br/>
+<div align="center">
+  <img src="https://readme-daily-quotes.vercel.app/api?font=Fira%20Code&theme=radical" />
+</div>
