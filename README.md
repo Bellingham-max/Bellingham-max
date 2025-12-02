@@ -1,188 +1,210 @@
 <style>
-  /* --- 蒸汽朋克核心样式容器 --- */
-  .sp-container {
-    font-family: 'Courier New', Courier, monospace; /* 复古打字机字体 */
-    background-color: #1a1510; /* 深煤炭色背景 */
-    background-image: radial-gradient(#2b221a 15%, transparent 16%),
-                      radial-gradient(#2b221a 15%, transparent 16%);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    color: #d4c5a3; /* 羊皮纸文字色 */
-    padding: 40px;
-    border: 8px solid #8b5a2b; /* 铜框 */
-    border-radius: 10px;
+  /* --- 基础容器：重型装甲板 --- */
+  .ind-container {
+    font-family: 'Courier New', monospace;
+    /* 模拟深色金属网格背景 */
+    background-color: #0d0d0d;
+    background-image: 
+      linear-gradient(rgba(18, 16, 16, 0.9) 2px, transparent 2px),
+      linear-gradient(90deg, rgba(18, 16, 16, 0.9) 2px, transparent 2px),
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    
+    color: #a8a8a8; /* 灰尘色文字 */
+    padding: 0;
+    border: 6px solid #2e2620; /* 深褐锈色边框 */
     box-shadow: 
-      inset 0 0 40px #000, 
-      0 0 15px rgba(139, 90, 43, 0.6); /* 外部辉光 */
+      0 0 0 4px #000,
+      0 0 30px rgba(0, 0, 0, 0.8);
     position: relative;
+    max-width: 680px;
+    margin: 30px auto;
     overflow: hidden;
-    max-width: 700px;
-    margin: 20px auto;
   }
 
-  /* --- 装饰性铆钉 --- */
-  .sp-container::before {
+  /* --- 顶部警示条纹 --- */
+  .ind-hazard-stripe {
+    height: 15px;
+    width: 100%;
+    background: repeating-linear-gradient(
+      45deg,
+      #2b2b2b,
+      #2b2b2b 10px,
+      #dfa000 10px,
+      #dfa000 20px
+    );
+    border-bottom: 2px solid #000;
+  }
+
+  /* --- 内部内容区 --- */
+  .ind-content-box {
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* --- 标题：辉光管风格 --- */
+  .ind-title {
+    font-size: 2.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    /* 文字镂空效果 + 橙色发光背景 */
+    -webkit-text-stroke: 1px #ff6600;
+    text-shadow: 
+      0 0 10px rgba(255, 102, 0, 0.5),
+      0 0 20px rgba(255, 102, 0, 0.3);
+    margin: 0;
+    letter-spacing: -2px;
+    border-left: 5px solid #ff6600;
+    padding-left: 15px;
+  }
+
+  .ind-subtitle {
+    color: #ff6600;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    text-transform: uppercase;
+  }
+
+  /* --- 装饰性螺丝钉 --- */
+  .ind-screw {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle, #555 30%, #222 90%);
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 2px rgba(255,255,255,0.2);
+    z-index: 5;
+  }
+  .ind-screw::after { /* 螺丝槽 */
     content: '';
     position: absolute;
-    top: 5px; left: 5px; right: 5px; bottom: 5px;
-    border: 2px dashed #5a4632;
-    pointer-events: none;
-    z-index: 1;
+    top: 50%; left: 50%;
+    width: 80%; height: 2px;
+    background: #111;
+    transform: translate(-50%, -50%) rotate(45deg);
   }
+  /* 螺丝位置 */
+  .tl { top: 25px; left: 10px; }
+  .tr { top: 25px; right: 10px; }
+  .bl { bottom: 10px; left: 10px; }
+  .br { bottom: 10px; right: 10px; }
 
-  /* --- 标题样式 --- */
-  .sp-header {
-    text-align: center;
-    border-bottom: 3px double #c0965c;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .sp-title {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: #e6b876;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 0px #3e2714;
-    letter-spacing: 4px;
-    margin: 0;
-  }
-
-  .sp-subtitle {
-    font-size: 0.9em;
-    color: #8f7458;
-    margin-top: 5px;
-    font-style: italic;
-  }
-
-  /* --- 内容区域 --- */
-  .sp-content {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border: 1px solid #5a4632;
-    box-shadow: inset 0 0 10px #000;
-    position: relative;
-    z-index: 2;
-    line-height: 1.6;
-  }
-
-  .sp-highlight {
-    color: #ff7f50; /* 炽热橙色 */
-    font-weight: bold;
-    text-shadow: 0 0 5px rgba(255, 127, 80, 0.4);
-  }
-
-  /* --- 动态齿轮 (SVG) --- */
-  .sp-gear {
-    position: absolute;
-    fill: #5e4b35;
-    opacity: 0.6;
-    z-index: 0;
-  }
-  
-  .sp-gear-1 {
-    top: -30px;
-    right: -30px;
-    width: 120px;
-    height: 120px;
-    animation: sp-spin 10s linear infinite;
-  }
-
-  .sp-gear-2 {
-    bottom: -20px;
-    left: -20px;
-    width: 80px;
-    height: 80px;
-    fill: #3e2e22;
-    animation: sp-spin-reverse 7s linear infinite;
-  }
-
-  /* --- 交互按钮 --- */
-  .sp-btn {
-    display: block;
-    width: fit-content;
-    margin: 20px auto 0;
-    background: linear-gradient(180deg, #c0965c, #8b5a2b);
-    border: 2px solid #3e2714;
-    padding: 10px 30px;
-    color: #1a1510;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-shadow: 0 4px 0 #3e2714;
-    transition: all 0.1s;
-    text-decoration: none;
-    font-family: inherit;
-  }
-
-  .sp-btn:hover {
-    background: linear-gradient(180deg, #d4aa6e, #9e6935);
-    transform: translateY(2px);
-    box-shadow: 0 2px 0 #3e2714;
-  }
-
-  .sp-btn:active {
-    transform: translateY(4px);
-    box-shadow: 0 0 0 #3e2714;
-  }
-
-  /* --- 动画定义 --- */
-  @keyframes sp-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-
-  @keyframes sp-spin-reverse {
-    from { transform: rotate(360deg); }
-    to { transform: rotate(0deg); }
-  }
-
-  /* --- 蒸汽烟雾效果 --- */
-  .sp-steam {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  /* --- 动态仪表盘条 --- */
+  .ind-meter-container {
+    background: #111;
+    height: 8px;
     width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, rgba(200, 200, 200, 0.1), transparent);
-    pointer-events: none;
+    margin: 20px 0;
+    border: 1px solid #333;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ind-meter-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #333, #ff6600);
+    width: 75%;
+    box-shadow: 0 0 10px #ff6600;
+    animation: ind-pressure 3s ease-in-out infinite alternate;
+  }
+
+  /* --- 工业齿轮 (SVG) --- */
+  .ind-gear {
+    position: absolute;
+    fill: #1f1a17; /* 非常深的生锈色 */
     z-index: 1;
-    animation: sp-flicker 4s infinite alternate;
+  }
+
+  .ind-gear-big {
+    right: -40px;
+    bottom: -40px;
+    width: 180px;
+    height: 180px;
+    opacity: 0.5;
+    animation: ind-rotate 15s linear infinite;
+  }
+
+  /* --- 交互按钮：紧急开关 --- */
+  .ind-btn {
+    display: inline-block;
+    background: #222;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+    padding: 12px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.2s;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.2);
+  }
+
+  .ind-btn:hover {
+    background: #ff6600;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.8);
+  }
+
+  /* --- 动画 --- */
+  @keyframes ind-rotate {
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes ind-pressure {
+    0% { width: 60%; opacity: 0.7; }
+    20% { width: 62%; }
+    40% { width: 58%; }
+    100% { width: 85%; opacity: 1; }
   }
   
-  @keyframes sp-flicker {
-    0% { opacity: 0.3; }
-    100% { opacity: 0.6; }
+  /* 烟雾层 */
+  .ind-smoke {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% 50%, transparent 60%, rgba(0,0,0,0.8) 100%);
+    pointer-events: none;
+    z-index: 3;
   }
 
 </style>
 
-<div class="sp-container">
-  <svg class="sp-gear sp-gear-1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
-  <svg class="sp-gear sp-gear-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/></svg>
+<div class="ind-container">
+  <div class="ind-hazard-stripe"></div>
   
-  <div class="sp-steam"></div>
+  <div class="ind-screw tl"></div>
+  <div class="ind-screw tr"></div>
+  <div class="ind-screw bl"></div>
+  <div class="ind-screw br"></div>
 
-  <div class="sp-header">
-    <h1 class="sp-title">Aether & Iron</h1>
-    <div class="sp-subtitle">Est. 1889 • Victorian Engineering Division</div>
-  </div>
+  <svg class="ind-gear ind-gear-big" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
 
-  <div class="sp-content">
+  <div class="ind-content-box">
+    <h1 class="ind-title">PROJECT: IRONCLAD</h1>
+    <div class="ind-subtitle">System Status: Critical // Level 4</div>
+    
+    <div style="font-size: 0.9em; margin-bottom: 5px;">BOILER PRESSURE</div>
+    <div class="ind-meter-container">
+      <div class="ind-meter-fill"></div>
+    </div>
+
     <p>
-      欢迎来到 <span class="sp-highlight">档案馆 07 号</span>。这里的机械由黄铜打造，动力源自纯净的蒸汽。
+      检测到以太能量波动。核心温度已达到临界值。
+      <br><br>
+      在这个被煤灰覆盖的世界里，只有最坚硬的齿轮才能转动。所有非必要的装饰已被剥离，剩下的只有<b>纯粹的功能</b>与<b>工业的轰鸣</b>。
     </p>
-    <p>
-      当前锅炉压力读数正常。请检查您的护目镜，确保齿轮咬合紧密。在这个模拟与数字交织的时代，我们将重铸<b>复古未来主义</b>的荣光。
-    </p>
-    <ul>
-      <li>⚙️ 纯铜机械结构</li>
-      <li>🔥 蒸汽动力驱动</li>
-      <li>🕰️ 模拟信号传输</li>
+
+    <ul style="list-style: square; color: #777;">
+      <li>[x] 启动重型液压泵</li>
+      <li>[ ] 释放紧急蒸汽阀</li>
+      <li>[ ] 接入差分机网络</li>
     </ul>
 
-    <a href="#" class="sp-btn">启动引擎</a>
+    <a href="#" class="ind-btn">执行协议 OMEGA</a>
   </div>
+  
+  <div class="ind-smoke"></div>
 </div>
