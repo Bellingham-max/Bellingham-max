@@ -23,11 +23,12 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Bellingham-max
-          # 这里使用了自定义的调色板：
-          # 背景色(透明), 浅色(紫色), 中色(粉色), 深色(金色), 极深色(亮白)
+          # 使用自定义的赛博朋克霓虹调色板 (蓝青色系)
+          # color_snake: 蛇的颜色
+          # color_dots: 背景点, 浅色点, 中色点, 深色点, 极深色点
           outputs: |
-            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#ff00aa&color_dots=#161b22,#4a1c40,#a83279,#d96c9c,#ffffff
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#7b00ff&color_dots=#0d1117,#39006b,#7b00ff,#bc00ff,#ffffff
+            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#00f2ff&color_dots=#0d1117,#003f4d,#007a8a,#00b5cc,#ffffff
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00f2ff&color_dots=#0d1117,#003f4d,#007a8a,#00b5cc,#ffffff
 
       - name: Push to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
