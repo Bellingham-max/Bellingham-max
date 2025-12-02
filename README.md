@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=VT323&size=35&duration=3000&pause=1000&color=00FF00&background=00000000&center=true&vCenter=true&width=500&lines=INITIALIZING+SYSTEM...;ACCESSING+PROFILE_DATA;WELCOME+NETRUNNER. வினை;> HACKER+|+DEVELOPER" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=VT323&size=35&duration=3000&pause=1000&color=00FF00&background=00000000&center=true&vCenter=true&width=500&lines=INITIALIZING+SYSTEM...;ACCESSING+PROFILE_DATA;WELCOME+NETRUNNER.;>+HACKER+|+DEVELOPER" alt="Typing SVG" />
   </a>
 </div>
 
@@ -18,7 +18,7 @@
 <br/>
 
 <div align="center">
-    <img src="https://github.com/ABSphreak/ABSphreak/blob/master/readme-assets/glitch-seperator.gif" width="80%">
+    <img src="https://github.com/ABSphreak/ABSphreak/raw/master/readme-assets/glitch-seperator.gif" width="80%">
 </div>
 
 ### >_ TECH_STACK_MODULE // 已加载技术模块
@@ -34,7 +34,7 @@
 <br/>
 
 <div align="center">
-    <img src="https://github.com/ABSphreak/ABSphreak/blob/master/readme-assets/glitch-seperator.gif" width="80%">
+    <img src="https://github.com/ABSphreak/ABSphreak/raw/master/readme-assets/glitch-seperator.gif" width="80%">
 </div>
 
 ### >_ CONTRIBUTION_MATRIX // 贡献矩阵数据流
