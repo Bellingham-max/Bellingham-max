@@ -1,46 +1,70 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=800&size=45&pause=1000&color=FFFFFF&center=true&vCenter=true&width=800&height=100&lines=BELLINGHAM-MAX_;&lt;SYSTEM_ONLINE/&gt;" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=35&pause=1000&color=00F2FF&center=true&vCenter=true&width=800&lines=Bellingham-max+|+Architecting+the+Digital+Future;System+Console+Initialized...;Accessing+Neural+Network..." alt="Typing SVG" />
 </div>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="80%">
 </div>
 
 <br/>
 
-<table align="center" width="100%" style="border:0; background:none;">
+<div align="center">
+  <a href="https://github.com/Bellingham-max">
+    <img src="https://img.shields.io/badge/GitHub-CLI-%230d1117?style=for-the-badge&logo=github&logoColor=00f2ff&border=00f2ff" />
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-%230d1117?style=for-the-badge&logo=linkedin&logoColor=00f2ff" />
+  </a>
+  &nbsp;
+  <a href="https://twitter.com">
+    <img src="https://img.shields.io/badge/Twitter-Follow-%230d1117?style=for-the-badge&logo=twitter&logoColor=00f2ff" />
+  </a>
+</div>
+
+<br/>
+
+<table align="center" width="95%" style="border: 0px solid #00f2ff; background-color: #0d1117;">
   <tr>
-    <td width="60%" align="center" style="border:0;">
-      <h3 align="left">📡 Activity_Stream</h3>
-      <br/>
-      <a href="https://github.com/Bellingham-max">
-        <img src="https://github-isometric-contribution-graph.vercel.app/api?username=Bellingham-max&theme=nord&color=88C0D0" width="100%" alt="Isometric Graph" />
-      </a>
+    <td width="60%" valign="top" style="border: 1px solid #30363d;">
+      <h3 align="left" style="color: #00f2ff;">📡 ACTIVITY_STREAM</h3>
+      <div align="center">
+        <a href="https://github.com/Bellingham-max">
+          <img src="https://github-isometric-contribution-graph.vercel.app/api?username=Bellingham-max&theme=tokyonight&color=00f2ff" width="100%" />
+        </a>
+      </div>
     </td>
-    
-    <td width="40%" align="center" style="vertical-align:top; border:0;">
-      <h3 align="left">⚙️ System_Status</h3>
+
+    <td width="40%" valign="top" style="border: 1px solid #30363d;">
+      <h3 align="left" style="color: #00f2ff;">⚙️ SYSTEM_STATUS</h3>
+      <div align="center">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bellingham-max&theme=tokyonight&hide_border=true&background=00000000&ring=00f2ff&fire=00f2ff&currStreakLabel=00f2ff" width="100%" />
+      </div>
+      
       <br/>
-      <img src="https://github-readme-stats.vercel.app/api?username=Bellingham-max&show_icons=true&theme=transparent&hide_border=true&title_color=88C0D0&text_color=D8DEE9&icon_color=81A1C1&count_private=true" width="100%" />
-      <br/><br/>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bellingham-max&layout=compact&theme=transparent&hide_border=true&title_color=88C0D0&text_color=D8DEE9" width="100%" />
+      
+      <h3 align="left" style="color: #00f2ff;">⚡ TECHNICAL ARSENAL</h3>
+      <div align="center">
+        <img src="https://img.shields.io/badge/C++-Core-%230d1117?style=for-the-badge&logo=c%2B%2B&logoColor=white&color=161b22" />
+        <img src="https://img.shields.io/badge/Python-Script-%230d1117?style=for-the-badge&logo=python&logoColor=00f2ff&color=161b22" />
+        <br/>
+        <img src="https://img.shields.io/badge/JS-Logic-%230d1117?style=for-the-badge&logo=javascript&logoColor=00f2ff&color=161b22" />
+        <img src="https://img.shields.io/badge/TS-Strict-%230d1117?style=for-the-badge&logo=typescript&logoColor=00f2ff&color=161b22" />
+        <br/>
+        <img src="https://img.shields.io/badge/React-UI-%230d1117?style=for-the-badge&logo=react&logoColor=00f2ff&color=161b22" />
+        <img src="https://img.shields.io/badge/Docker-Container-%230d1117?style=for-the-badge&logo=docker&logoColor=00f2ff&color=161b22" />
+      </div>
     </td>
   </tr>
 </table>
 
-<br/>
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
-  <br/><br/>
-  <h3 align="center">🐍 Contribution_Sequence</h3>
-  <img src="https://github.com/Bellingham-max/Bellingham-max/blob/output/github-contribution-grid-snake-dark.svg" width="100%" />
-</div>
-
-<div align="center">
-  <br/>
-  <samp>
-    DESIGNED_FOR: [ BELLINGHAM-MAX ] // SYSTEM_VER: 2025.1
-    <br/>
-    <img src="https://komarev.com/ghpvc/?username=Bellingham-max&style=flat-square&color=2e3440&label=VISITS" />
-  </samp>
-</div>
+<table align="center" width="95%" style="border: 0px; margin-top: 10px;">
+  <tr>
+    <td style="border: 1px solid #30363d;">
+      <h3 align="left" style="color: #00f2ff;">🐍 CONTRIBUTION_SEQUENCE</h3>
+      <div align="center">
+        <img src="https://github.com/Bellingham-max/Bellingham-max/blob/output/github-contribution-grid-snake-dark.svg" width="100%" />
+      </div>
+    </td>
+  </tr>
+</table>
